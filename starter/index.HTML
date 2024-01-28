@@ -25,23 +25,28 @@
 
     <body>
         <p>What type?</p>
-
-        <form>
-            <!-- Your form inputs go here -->
-            <label >Choose a restaurant type:</label>
-            <select id="foodtype">
-               <option value="" disabled selected>Select a restaurant type</option></a>
-                <option value="Japanese">Japanese</option>
-                <option value="Mexican">Mexican</option>
-                <option value="Korean">Korean</option>
-                <option value="American">American</option>
-                <a href="/starter/Indian.html"><option value="Indian">Indian</option></a>
-                <option value="Italian">Italian</option>
-                <option value="Thai">Thai</option>
-                <option value="Vietnamese">Vietnamese</option>
-            </select>
-            <button type="button" onclick="let foodtype = document.getElementById('foodtype').value; if (foodtype === '') return; window.open(`/starter/${foodtype}.html`, '_self')">Go To Page</button>
-        </form>
+        <div class="container-mt-5">
+            <form>
+                <div class="mb-3">
+                    <label >Choose a restaurant type:</label>
+                <select id="foodtype">
+                   <option value="" disabled selected>Select a restaurant type</option></a>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Mexican">Mexican</option>
+                    <option value="Korean">Korean</option>
+                    <option value="American">American</option>
+                    <a href="/starter/Indian.html"><option value="Indian">Indian</option></a>
+                    <option value="Italian">Italian</option>
+                    <option value="Thai">Thai</option>
+                    <option value="Vietnamese">Vietnamese</option>
+                </select>
+                </div>
+                <!-- Your form inputs go here -->
+                
+                <button type="button" onclick="let foodtype = document.getElementById('foodtype').value; if (foodtype === '') return; window.open(`/starter/${foodtype}.html`, '_self')">Go To Page</button>
+            </form>
+        </div>
+        
 
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
@@ -65,7 +70,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/pho.jpg" class="d-block w-100" alt="pho">
+                <img src="images/pho.png" class="d-block w-100" alt="pho">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
                   <p>Some representative placeholder content for the third slide.</p>
