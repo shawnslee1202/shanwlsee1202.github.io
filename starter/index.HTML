@@ -14,21 +14,21 @@
         <p>What type?</p>
     </body>
 
-    <form action="restaurants.html" method="get">
+    <form>
         <!-- Your form inputs go here -->
-        <label for="restaurantType">Choose a restaurant type:</label>
-        <select id="restaurantType" name="restaurantType">
-            <option value="" disabled selected>Select a restaurant type</option>
-            <option value="Japanese">Japanese</option>
+        <label >Choose a restaurant type:</label>
+        <select id="foodtype">
+           <option value="" disabled selected>Select a restaurant type</option></a>
+            <option value="Indian">Japanese</option>
             <option value="Mexican">Mexican</option>
             <option value="Korean">Korean</option>
             <option value="American">American</option>
-            <option value="Indian">Indian</option>
+            <a href="/starter/Indian.html"><option value="Indian">Indian</option></a>
             <option value="Italian">Italian</option>
             <option value="Thai">Thai</option>
             <option value="Vietnamese">Vietnamese</option>
         </select>
-        <button type="submit">Go To Page</button>
+        <button type="button" onclick="let foodtype = document.getElementById('foodtype').value; if (foodtype === '') return; window.open(`/starter/${foodtype}.html`, '_self')">Go To Page</button>
     </form>
     
     <script>
