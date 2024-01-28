@@ -2,7 +2,7 @@
 <html>
     <!--title and important stuff-->
     <head>
-        <h1>Best Restaurants in College Station</h1>
+        <title>Best Restaurants in College Station</title>
     </head>
     <!-- import our arrays of restaurants -->
     <script src="restaurants.js">
@@ -11,6 +11,8 @@
     </script>
 
     <body>
+        <h1 id = 'Restaurants'>restaurants</h1>
+        <p id = 'Rating'>ratings</p>
         <p>What type?</p>
     </body>
 
@@ -20,6 +22,12 @@
 
         let restaurants = type['Name'];
         let rating = type['Rating'];
+
+        let restaurants_elements = document.getElementById('Restaurant');
+        let rating_elements = document.getElementById('Rating')
+
+        restaurants_elements.innerHTML = restaurants;
+        rating_elements.innerHTML = rating;
     </script>
 
 </html>
