@@ -10,7 +10,7 @@
 
     <style>
         body {
-            background-image: url('pasta.jpg');
+            background-image: url('PASTA.png');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;        background-position: center; /* Set the background position to top */
@@ -55,47 +55,25 @@
             letter-spacing: 2px;
             margin-bottom: 20px;
         }
+        .footer-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
     
     </style>
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Useful Links</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.HTML">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://casamangiare.com/">Website</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
 
       <section class="bg-dark text-light p-5 text-center">
         <div class="container">
@@ -106,24 +84,72 @@
     
 
     <ul>
-        <h2>Casa Mangiare - Rating: 4.6</h2>
+        <h2><strong>Casa Mangiare - Rating: 4.6</strong></h2>
     </ul>
 
     <u2>
         <h2><strong>Most Popular Menus at Casa Mangiare:</strong></h2>
-        <li>Wagyu Alla Bolognese Pasta</li>
-        <li>Scottish Salmon</li>
-        <li>Braised Beef Short Rib</li>
         <li>New Zaeland Lamb Rack</li>
         <li>Black Trffle Pizza</li>
     </u2>
-
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="wagyu.dds" class="card-img-top" alt="Wagyu">
+            <div class="card-body">
+              <h5 class="card-title">Wagyu Alla Bolognese Pasta</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="scottish_salmon.dds" class="card-img-top" alt="Scottish">
+            <div class="card-body">
+              <h5 class="card-title">Scottish Salmon</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="braised_beef.dds" class="card-img-top" alt="beef">
+            <div class="card-body">
+              <h5 class="card-title">Braised Beef Short Rib</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
     <u3>
         <h2>Why Casa Mangiare?</h2>
         <li>You can enjoy the most unique pizza, such as Black Truffle and Lobster, which are only served at the Casa Mangiare!</li>
         <li>Not only dinner, but you can also enjoy lunch from 11:30 A.M. to 2:30 P.M!</li>
         <li>Last but most importantly, they have THE MOOD..</li>
     </u3>
+<section>
+    <div class="footer-links">
+        <a href="index.HTML">Home</a> |
+        <a href="https://casamangiare.com/">Website</a> |
+        <a href="#">Dropdown</a> |
+        <a href="#" class="disabled">Disabled</a>
+    </div>
+    
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</section>
+    
 </body>
 
 </html>
