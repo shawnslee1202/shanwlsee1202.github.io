@@ -55,6 +55,8 @@ var restaurants = [
         "Rating": 4.8
     },
     {
-        
-    }
+        "Type": "Vietnamese",
+        "Name": "Nam Cafe",
+        "Rating": 4.4
+    },
 ]
