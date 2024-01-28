@@ -1,7 +1,7 @@
 var restaurants = [
     {
         "Type": "Japanese",
-        "Name": "Taraka Ramen",
+        "Name": "Tanaka Ramen",
         "Rating": 4.8
     },
     {
