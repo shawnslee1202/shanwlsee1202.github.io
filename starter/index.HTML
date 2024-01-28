@@ -1,7 +1,24 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Best Restaurants in College Station</h1>
-<p>What type?</p>
-</body>
+    <!--title and important stuff-->
+    <head>
+        <h1>Best Restaurants in College Station</h1>
+    </head>
+    <!-- import our arrays of restaurants -->
+    <script src="restaurants.js">
+
+    </script>
+
+    <body>
+        <p>What type?</p>
+    </body>
+
+    <script>
+        let type_of_food = prompt("What type of food are you craving?");
+        let type = restaurants[type_of_food];
+
+        let restaurants = type['Name'];
+        let rating = type['Rating'];
+    </script>
+
 </html>
